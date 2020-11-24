@@ -13,7 +13,7 @@ $cache_buster = uniqid();
           Demo Animation
         </h1>
         <video>
-          <source src="/assets/video/boxer.mp4" type="video/mp4">
+          <source src="assets/video/boxer.mp4" type="video/mp4">
           Your browser does not support this video type...
         </video>
       </div>

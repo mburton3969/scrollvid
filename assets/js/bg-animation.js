@@ -10,7 +10,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 7000,
+  duration: 5000,
   triggerElement: intro,
   triggerHook: 0
 })
@@ -30,7 +30,7 @@ let scene2 = new ScrollMagic.Scene({
 .addTo(controller);
 
 //Video Animation
-let accelAmount = 0.1;
+let accelAmount = 0.35;//Edit to change the slow to stop effect
 let scrollpos = 0;
 let delay = 0;
 
@@ -40,8 +40,6 @@ scene.on('update', e => {
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelAmount;
-  //console.log(scrollpos, delay);
-  //console.log(video.currentTime);
+  console.log(scrollpos, delay);
   video.currentTime = delay;
-  console.log(video.currentTime);
-}, 33.3);
+}, 125);//change the refresh rate depending on the frame rate of the video.
