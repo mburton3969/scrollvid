@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-request.open("GET", "/assets/video/boxer2.mp4", true);
+request.open("GET", "vid.mp4", true);
 /* set the response to blob type */
 request.responseType = "blob";
 request.onload = function () {
@@ -15,4 +15,4 @@ request.onload = function () {
 request.onerror = function() {
   alert('Error Loading Video SRC...');
 }
-//request.send();
+request.send();
