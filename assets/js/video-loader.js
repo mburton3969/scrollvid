@@ -15,4 +15,4 @@ request.onload = function () {
 request.onerror = function() {
   alert('Error Loading Video SRC...');
 }
-request.send();
+//request.send();

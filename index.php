@@ -13,24 +13,24 @@ $cache_buster = uniqid();
           The Issues
         </h1>
         <video>
-          <source src="" type="video/mp4">
+          <source src="assets/video/nigeria-slums.mp4" type="video/mp4">
           Your browser does not support this video type...
         </video>
       </div>
           
       <div class="fulani">
-        <h1>
+        <h1 class="fulani_text">
           Fulani Herdsmen
         </h1>
-        <img src="assets/img/fulani.jpg" />
+        <!--<img src="assets/img/fulani.jpg" />-->
       </div>
     
-      <section>
+      <!--<section>
         <h1>
           Demo Animation
         </h1>
         <img src="assets/img/fulani.jpg" />
-      </section>
+      </section>-->
         
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
