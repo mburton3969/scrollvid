@@ -1,6 +1,10 @@
+//Intro Section
 const intro = document.querySelector('.intro');
 const video = intro.querySelector('video');
 const text = intro.querySelector('h1');
+//Fulani Section
+const fulani = document.querySelector('.fulani');
+const fulani_text = fulani.querySelector('h1');
 //END SECTION
 const section = document.querySelector('section');
 const end = section.querySelector('h1');
@@ -10,7 +14,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 7000,
+  duration: 9000,
   triggerElement: intro,
   triggerHook: 0
 })
@@ -42,4 +46,17 @@ setInterval(() => {
   delay += (scrollpos - delay) * accelAmount;
   console.log(scrollpos, delay);
   video.currentTime = delay;
-}, 125);//change the refresh rate depending on the frame rate of the video.
+}, 175);//change the refresh rate depending on the frame rate of the video.
+
+
+//Text Animation 2
+const textAnim2 = TweenMax.fromTo(fulani_text, 3, { opacity: 1 }, { opacity: 0 });
+
+let scene3 = new ScrollMagic.Scene({
+  duration: 5000,
+  tiggerElement: fulani,
+  triggerHook: 0
+})
+.setTween(textAnim2)
+.setPin(fulani)
+.addTo(controller);

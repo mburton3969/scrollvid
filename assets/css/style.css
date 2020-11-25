@@ -8,6 +8,7 @@ body{
   font-family: sans-serif;
 }
 
+/* INTRO SECTION *****************************************************************/
 .intro{
   height: 100vh;
 }
@@ -26,6 +27,28 @@ body{
   color: white;
 }
 
+
+/* FULANI SECTION *****************************************************************/
+.fulani{
+  height: 100vh;
+}
+.fulani img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fulani h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  color: white;
+}
+
+
+/* END SECTION *****************************************************************/
 section{
   height: 100vh;
   color: black;

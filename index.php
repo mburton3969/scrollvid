@@ -4,24 +4,32 @@ $cache_buster = uniqid();
 <html>
   <head>
     <title>Title</title>
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css?cb=<?php echo $cache_buster; ?>" rel="stylesheet" />
   </head>
   <body>
-          
+    
       <div class="intro">
         <h1>
-          Demo Animation
+          The Issues
         </h1>
         <video>
-          <source src="assets/video/boxer.mp4" type="video/mp4">
+          <source src="" type="video/mp4">
           Your browser does not support this video type...
         </video>
       </div>
-      
+          
+      <div class="fulani">
+        <h1>
+          Fulani Herdsmen
+        </h1>
+        <img src="assets/img/fulani.jpg" />
+      </div>
+    
       <section>
         <h1>
-          Power Tools
+          Demo Animation
         </h1>
+        <img src="assets/img/fulani.jpg" />
       </section>
         
   </body>
