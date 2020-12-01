@@ -3,13 +3,14 @@ $cache_buster = uniqid();
 ?>
 <html>
   <head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>Title</title>
     <link href="assets/css/style.css?cb=<?php echo $cache_buster; ?>" rel="stylesheet" />
   </head>
   <body>
     
-      <div class="intro">
-        <video>
+      <div class="scene intro">
+        <video playsinline autoplay defaultMuted>
           <source src="assets/video/nigeria-slums.mp4" type="video/mp4">
           Your browser does not support this video type...
         </video>
@@ -21,7 +22,7 @@ $cache_buster = uniqid();
         </h1>
       </div>
           
-      <div class="fulani">
+      <div class="scene fulani">
         <h1 class="fulani_title">
           Fulani Herdsmen Oppression
         </h1>
@@ -39,7 +40,7 @@ $cache_buster = uniqid();
         </h2>
       </div>
     
-      <div class="idp">
+      <div class="scene idp">
         <h1 class="idp_title">
           Internally Displaced People [IDP] Camps
         </h1>
@@ -63,11 +64,48 @@ $cache_buster = uniqid();
         </h2>
       </div>
     
-      <section>
+      <div class="scene edu">
+        <h1 class="edu_title">
+          Poor Education
+        </h1>
+        <h2 class="edu_text_1">
+          The people came into the camps carrying only what they could 
+          grab as they fled for their lives. There is currently no organized effort in place to 
+          assist this forgotten group. When our team visited for the first time to assess the crises 
+          and pray directly with the distraught refugees, two requests immediately emerged:
+        </h2>
+        <br>
+        <h2 class="edu_text_2">
+          <span>The ability to bathe.</span> The women in the camps whispered privately to the women on our team 
+          that they needed water to bathe. Most of the people in the camps have no ability to wash 
+          themselves or attend to their most basic hygiene needs, and go days without bathing in 
+          temperatures normally above 100F. Many of the camps do not have good access to clean water 
+          and certainly not soap or other cleaning products.
+        </h2>
+        <br>
+        <h2 class="edu_text_3">
+          <span>Food.</span> Food is extremely limited. There is constant urgent need for even basic food provisions.
+        </h2>
+      </div>
+    
+      <div class="scene end">
+        <video playsinline autoplay defaultMuted>
+          <source src="assets/video/nigeria-slums-2.mp4" type="video/mp4">
+          Your browser does not support this video type...
+        </video>
+        <h1>
+          Would you consider engaging with us?
+        </h1>
+        <h1 class="end_text_2">
+          <a href="/engage">Click here to find out how</a>
+        </h1>
+      </div>
+    
+      <!--<section>
         <h1>
           End Section
         </h1>
-      </section>
+      </section>-->
         
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>

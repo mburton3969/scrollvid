@@ -1,3 +1,33 @@
+/* This used to work for the parent element of button divs */
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+.intro video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -75,6 +105,8 @@ body{
 
 .idp h1{
   position: relative;
+  width: 90%;
+  margin: auto;
   top: 5%;
   text-align: center;
   font-size: 70px;
@@ -94,6 +126,63 @@ body{
 .idp span{
   color:red;
   font-weight: 800px;
+}
+
+
+/* IDP SECTION *****************************************************************/
+.edu{
+  height: 100vh;
+}
+.edu img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.edu h1{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  top: 5%;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+.edu h2{
+  position: relative;
+  top: 10%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.edu span{
+  color:red;
+  font-weight: 800px;
+}
+
+
+/* END SECTION *****************************************************************/
+.end{
+  height: 100vh;
+}
+.end video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.end h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 80px;
+  color: white;
 }
 
 
